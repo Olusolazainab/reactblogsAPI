@@ -20,10 +20,9 @@ const Create = () =>
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(blog)
-    }).then((res) =>
+    }).then(() =>
     {
-     res.json()
-      .then((json)=>console.log(json));
+     console.log("new blog added");
       setIsPending(false)
     })
   }
