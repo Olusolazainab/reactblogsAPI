@@ -12,7 +12,7 @@ const Create = () =>
   const handleSubmit = (e) =>
   {
    
-    e.prevent.Default();
+    e.preventDefault();
     const blog = { title, body, author };
     
     setIsPending(true);
